@@ -1,9 +1,7 @@
-<!--
- * @Author: your name
- * @Date: 2021-01-20 16:06:30
- * @LastEditTime: 2021-01-20 16:07:16
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \wm.github.io\README.md
--->
-halo,i'm oliver
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=xiaoweiaaa&show_icons=true&icon_color=CE1D2D&text_color=718096&bg_color=ffffff&hide_title=true" />
+
+### 你好，世界 👋
+
+- :orange_book: Focusing on frontend
+- :hammer: Creator of applications and frameworks
+- :meat_on_bone: Meat lover
