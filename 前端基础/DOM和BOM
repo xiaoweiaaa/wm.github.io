@@ -1,0 +1,15 @@
+
+一。defer和async
+defer ：要等到整个页面在内存中正常渲染结束（DOM 结构完全生成，以及其他脚本执行完成），才会执行；
+async：一旦下载完，渲染引擎就会中断渲染，执行这个脚本以后，再继续渲染。
+
+一句话，defer是“渲染完再执行”，async是“下载完就执行”。
+如果有多个defer脚本，会按照它们在页面出现的顺序加载，多个async脚本是不能保证加载顺序的。
+
+二。scrollTop 和scrollHeight
+scrollTop：元素滚动条内的顶部隐藏部分的高度。
+兼容性问题：获得整个文档scrollTop，IE是document.documentElement.scrollTop，FF/CH则是document.body.scrollTop.
+scrollHeight：元素滚动条内的内容高度。
+兼容性问题：获取整个文档scrollHeight，IE/FF/CH都可以通过document.body.scrollHeight或document.documentElement.scrollHeight获得。
+scrollTop属性和scrollHeight属性只有DOM元素才有，window/document没有。
+scrollTop属性可设置，scrollHeight属性只可读。
