@@ -1,2 +1,2 @@
-Hi,This is my study note,which  records my learning process. 
-It it helps you, i will be very happy.
+你好 👋,这是我的个人学习笔记，它记录了我的学习历程。
+如果对你有所帮助，不甚荣幸。
