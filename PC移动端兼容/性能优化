@@ -1,0 +1,17 @@
+一。节流和防抖
+节流(throttle)：如果在定时器的时间范围内再次触发，则不予理睬，等当前定时器完成，在执行。例如：公交车发车
+
+防抖(debounce)：每次事件触发则删除原来的定时器，建立新的定时器，从最后一次触发开始计时。例如：游戏回城以最后一次为准
+
+加强版节流：节流与防抖结合，解决防抖触发太频繁会导致没有反馈。固定时刻必须执行一次
+
+二。图片懒加载
+<img src="default.jpg" data-src="http://www.xxx.com/target.jpg" />
+clientHeight =document.documentElement.clientHeight
+//判断元素现在已经出现在视口中
+方案一:
+clientHeight、scrollTop 和 offsetTop（img. offsetTop<clientHeight+scrollTop）
+方案二:
+DOM 元素的API——getBoundingClientRect（img.getBoundingClientRect().top < clientHeigh）
+方案三:
+浏览器内置的一个API——IntersectionObserver，实现了监听window的scroll事件、判断是否在视口中以及节流三大功能。
