@@ -1,0 +1,50 @@
+js八大数据类型：
+Number, String,Boolean,Null,Undefined,Object,Symbol,BigInt
+
+splice：添加或删除或修改原数组，起始下标，长度，替换内容 ，返回原数组
+slice:操作数组或字符串，返回 【起始下标，截止下标）新数组
+substr：操作字符串，返回 【起始下标，截止下标】新字符串
+substring：操作字符串，返回 【起始下标，截止下标）新字符串
+
+for in  一般用来遍历对象 ，返回键名 ，不用来遍历数组，因为会返回原型链上或者手动添加的的键名
+for of  一般用来遍历数组或类似数组的对象，返回键值。可使用break，return退出循环。若要遍历对象，需给对象添加symbol.iterator接口。
+foreach  遍历数组 ，中途不能return或break						                    
+Object.keys(obj) 遍历对象，返回对象的键值
+
+1、break：是立即结束语句，并跳出语句，进行下个语句执行。
+2、continue：是停止当前语句，并从头执行该语句。
+3、return：停止函数。
+4、使用的语句环境不一样，break和continue是用在循环或switch语句中，return是用在函数语句 中。
+
+return true;返回正常的处理结果；终止处理。
+return false;返回错误的处理结果；终止处理；阻止提交表单;阻止执行默认的行为。
+return;把控制权返回给页面
+
+判断是否是数组的方法
+1.Array.isArray(arr)
+2.Object.prototype.toString.call(arr) === '[Object Array]'
+3. arr.constructor === Array
+4. Object.getPrototypeOf(arr)  === Array.prototype
+5. arr instance Array
+6. Array.prototype.isPrototypeOf(arr)
+
+
+typeof ：对于原始类型来说，除了 null 都可以调用typeof显示正确的类型，但对于引用数据类型，除了函数之外，都会显示"object"。
+instanceof：判断对象数据类型,instanceof的原理是基于原型链的查询，只要处于原型链中，判断永远为true
+
+
+在ES5中只存在两种作用域———全局作用域和函数作用域
+当访问一个变量时，解释器会首先在当前作用域查找标示符，如果没有找到，就去父作用域找，直到找到该变量的标示符或者不在父作用域中，这就是作用域链
+
+JS中，类型转换只有三种：
+转换成数字
+转换成布尔值
+转换成字符串
+
+
+
+寄生组合继承：
+function Parent5 () { this.name = 'parent5'; this.play = [1, 2, 3]; } function Child5() { Parent5.call(this); this.type = 'child5'; } Child5.prototype = Object.create(Parent5.prototype); Child5.prototype.constructor = Child5;
+
+多维数组扁平化：
+1.
